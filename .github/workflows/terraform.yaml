@@ -12,7 +12,7 @@ jobs:
     name: Terraform
     runs-on: ubuntu-latest
     strategy:
-      fail-fast: false # We will want all pipelines to run without one failing the others (this is okay!)
+      fail-fast: false
       matrix:
         directory: ["./instances"]
     defaults:
